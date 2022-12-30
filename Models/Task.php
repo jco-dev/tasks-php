@@ -1,5 +1,6 @@
 <?php
-class Task{
+class Task
+{
     public $title;
     public $completed = false;
 
@@ -8,7 +9,7 @@ class Task{
         $this->title = $title;
         $this->completed = $completed;
     }
-    
+
     public function complete()
     {
         $this->completed = true;
