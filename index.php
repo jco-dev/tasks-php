@@ -1,5 +1,7 @@
 <?php
 
+require 'functions.php';
+
 $tasks = [
     [
         'title' => "Estudiar PHP",
@@ -30,5 +32,7 @@ $completedTasks = array_filter($tasks, function ($task) {
 $pendingTasks = array_filter($tasks, function ($task) {
     return !$task['completed'];
 });
+
+dd($completedTasks);
 
 require 'index.view.php';
