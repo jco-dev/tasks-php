@@ -37,8 +37,8 @@ $tasks = [
     new Task('Estudiar Laravel', false),
     new Task('Estudiar Vue', true),
 ];
-echo "<pre>";
-dd($tasks);
+// echo "<pre>";
+// dd($tasks);
 
 $completedTasks = array_filter($tasks, function ($task) {
     return $task->completed;
