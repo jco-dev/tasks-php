@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 require 'functions.php';
 
 require 'Models/Task.php';
+require 'Enums/ColorEnum.php';
 
 // $task = new Task('Estudiar PHP', true);
 // $task->complete();
@@ -37,6 +38,10 @@ $tasks = [
     new Task('Estudiar Laravel'),
     new Task('Estudiar Vue', true),
 ];
+
+$tasks[0]->setColor(ColorsEnum::BLUE->value);
+$tasks[1]->setColor(ColorsEnum::GREEN->value);
+$tasks[2]->setColor(ColorsEnum::RED->value);
 // echo "<pre>";
 // dd($tasks);
 
