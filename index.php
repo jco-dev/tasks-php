@@ -8,7 +8,7 @@ require 'functions.php';
 
 require 'Models/Task.php';
 
-$task = new Task('Estudiar PHP', true);
+// $task = new Task('Estudiar PHP', true);
 // $task->complete();
 // dd($task);
 
@@ -33,8 +33,8 @@ $tasks = [
     //     'title' => "Estudiar Angular",
     //     'completed' => false
     // ],
-    new Task('Estudiar PHP', true),
-    new Task('Estudiar Laravel', false),
+    new Task(completed: true, title: 'Estudiar PHP'),
+    new Task('Estudiar Laravel'),
     new Task('Estudiar Vue', true),
 ];
 // echo "<pre>";
